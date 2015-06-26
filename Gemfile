@@ -8,8 +8,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :test do
-	gem 'cucumber-rails'
+	gem 'cucumber-rails', :require => false
 	gem 'rspec-rails'
+	gem 'database_cleaner'
 end
 
 group :development, :test do
